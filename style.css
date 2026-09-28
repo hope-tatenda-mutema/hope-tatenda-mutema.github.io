@@ -95,12 +95,8 @@ nav a:hover {
 
 .project-card {
     background-color: #ffffff;
-    padding: 40px;
-    min-height: 260px;
     border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    overflow: hidden;
     transition: transform 0.25s ease;
 }
 
@@ -112,17 +108,49 @@ nav a:hover {
     grid-column: 1 / -1;
 }
 
+.project-image {
+    min-height: 220px;
+    padding: 32px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-image span {
+    font-size: 34px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.project-image-one {
+    background:
+        linear-gradient(135deg, #d9e4f5 0%, #edf3fb 100%);
+}
+
+.project-image-two {
+    background:
+        linear-gradient(135deg, #e7dcf6 0%, #f5f0fb 100%);
+}
+
+.project-image-three {
+    background:
+        linear-gradient(135deg, #dceee8 0%, #eef7f4 100%);
+}
+
+.project-content {
+    padding: 32px 36px 38px 36px;
+}
+
 .project-type {
     font-size: 13px;
     letter-spacing: 1.5px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0 0 16px 0;
 }
 
 .project-card h3 {
     font-size: 30px;
     line-height: 1.15;
-    margin: 0 0 18px 0;
+    margin: 0 0 16px 0;
 }
 
 .project-card h3 a {
@@ -319,8 +347,12 @@ footer p {
         font-size: 40px;
     }
 
-    .project-card {
-        padding: 32px;
+    .project-image {
+        min-height: 190px;
+    }
+
+    .project-image span {
+        font-size: 30px;
     }
 
     .about-grid {
@@ -410,9 +442,17 @@ footer p {
         grid-column: auto;
     }
 
-    .project-card {
-        min-height: 220px;
-        padding: 28px;
+    .project-image {
+        min-height: 170px;
+        padding: 24px;
+    }
+
+    .project-image span {
+        font-size: 28px;
+    }
+
+    .project-content {
+        padding: 26px;
     }
 
     .project-card h3 {
