@@ -106,6 +106,8 @@ nav a:hover {
 
 .project-card:nth-child(3) {
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
 }
 
 .project-image {
@@ -135,13 +137,23 @@ nav a:hover {
     display: block;
 }
 
+.project-card:nth-child(3) .project-image {
+    min-height: 100%;
+}
+
 .project-card:nth-child(3) .project-image img {
-    height: 230px;
-    max-width: 700px;
+    height: 220px;
+    max-width: 480px;
 }
 
 .project-content {
     padding: 32px 36px 38px 36px;
+}
+
+.project-card:nth-child(3) .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-type {
@@ -359,8 +371,12 @@ footer p {
         height: 155px;
     }
 
+    .project-card:nth-child(3) {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .project-card:nth-child(3) .project-image img {
-        height: 190px;
+        height: 180px;
     }
 
     .about-grid {
@@ -448,6 +464,7 @@ footer p {
 
     .project-card:nth-child(3) {
         grid-column: auto;
+        display: block;
     }
 
     .project-image {
