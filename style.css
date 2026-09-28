@@ -129,7 +129,36 @@ nav a:hover {
 }
 
 
+/* ABOUT */
+
+.about {
+    padding: 100px 0 120px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+
 /* TABLETS */
+
 @media (max-width: 900px) {
 
     body {
@@ -168,10 +197,23 @@ nav a:hover {
         padding: 32px;
     }
 
+    .about-grid {
+        gap: 50px;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
 }
 
 
 /* PHONES */
+
 @media (max-width: 650px) {
 
     body {
@@ -244,6 +286,23 @@ nav a:hover {
 
     .project-card p {
         font-size: 17px;
+    }
+
+    .about {
+        padding: 70px 0 80px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about h2 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 18px;
     }
 
 }
