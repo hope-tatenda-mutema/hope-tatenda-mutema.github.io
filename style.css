@@ -66,7 +66,7 @@ nav a:hover {
 }
 
 
-/* GENERAL SECTION LABEL */
+/* GENERAL LABEL */
 
 .section-label {
     font-size: 14px;
@@ -98,11 +98,9 @@ nav a:hover {
     padding: 40px;
     min-height: 260px;
     border-radius: 18px;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
     transition: transform 0.25s ease;
 }
 
@@ -180,47 +178,46 @@ nav a:hover {
 
 .experience h2 {
     font-size: 46px;
-    margin: 0 0 50px 0;
+    margin: 0 0 45px 0;
 }
 
-.experience-list {
-    border-top: 1px solid #dcdcdc;
-}
-
-.experience-item {
+.experience-grid {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 60px;
-
-    padding: 34px 0;
-
-    border-bottom: 1px solid #dcdcdc;
-    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
-.experience-item h3 {
+.experience-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.experience-year {
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+    opacity: 0.55;
+    margin: 0 0 18px 0;
+}
+
+.experience-card h3 {
     font-size: 24px;
-    line-height: 1.25;
-    margin: 0;
+    line-height: 1.2;
+    margin: 0 0 8px 0;
 }
 
 .experience-org {
-    font-size: 17px;
-    font-weight: bold;
-    margin: 8px 0 0 0;
-    opacity: 0.72;
-}
-
-.experience-right p {
-    font-size: 18px;
-    line-height: 1.55;
-    margin: 0;
-}
-
-.experience-date {
     font-size: 16px !important;
-    margin-top: 10px !important;
-    opacity: 0.6;
+    font-weight: bold;
+    opacity: 0.7;
+    margin: 0 0 18px 0 !important;
+}
+
+.experience-card p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0;
 }
 
 
@@ -256,7 +253,8 @@ nav a:hover {
         font-size: 20px;
     }
 
-    .projects h2 {
+    .projects h2,
+    .experience h2 {
         font-size: 40px;
     }
 
@@ -276,14 +274,6 @@ nav a:hover {
         font-size: 18px;
     }
 
-    .experience h2 {
-        font-size: 40px;
-    }
-
-    .experience-item {
-        gap: 35px;
-    }
-
 }
 
 
@@ -294,9 +284,6 @@ nav a:hover {
     body {
         padding: 24px 20px;
     }
-
-
-    /* MOBILE NAVIGATION */
 
     nav {
         flex-direction: column;
@@ -318,9 +305,6 @@ nav a:hover {
         font-size: 16px;
     }
 
-
-    /* MOBILE HERO */
-
     .hero {
         padding: 30px 0 80px 0;
     }
@@ -339,14 +323,12 @@ nav a:hover {
         font-size: 18px;
     }
 
-
-    /* MOBILE PROJECTS */
-
     .projects {
         padding: 60px 0 80px 0;
     }
 
-    .projects h2 {
+    .projects h2,
+    .experience h2 {
         font-size: 36px;
         margin-bottom: 30px;
     }
@@ -372,9 +354,6 @@ nav a:hover {
         font-size: 17px;
     }
 
-
-    /* MOBILE ABOUT */
-
     .about {
         padding: 70px 0 80px 0;
     }
@@ -392,34 +371,24 @@ nav a:hover {
         font-size: 18px;
     }
 
-
-    /* MOBILE EXPERIENCE */
-
     .experience {
         padding: 70px 0 80px 0;
     }
 
-    .experience h2 {
-        font-size: 36px;
-        margin-bottom: 35px;
-    }
-
-    .experience-item {
+    .experience-grid {
         grid-template-columns: 1fr;
-        gap: 18px;
-        padding: 28px 0;
     }
 
-    .experience-item h3 {
+    .experience-card {
+        padding: 26px;
+    }
+
+    .experience-card h3 {
         font-size: 22px;
     }
 
-    .experience-right p {
-        font-size: 17px;
-    }
-
-    .experience-date {
-        font-size: 15px !important;
+    .experience-card p {
+        font-size: 16px;
     }
 
 }
