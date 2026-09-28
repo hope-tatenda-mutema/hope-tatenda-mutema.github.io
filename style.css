@@ -221,6 +221,67 @@ nav a:hover {
 }
 
 
+/* CONTACT */
+
+.contact {
+    padding: 100px 0 90px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact h2 {
+    font-size: 56px;
+    line-height: 1.05;
+    margin: 0 0 24px 0;
+}
+
+.contact p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-links a {
+    color: #222;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 14px;
+}
+
+.contact-links a:hover {
+    opacity: 0.55;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #dcdcdc;
+    padding: 30px 0 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.6;
+    margin: 0;
+}
+
+
 /* TABLETS */
 
 @media (max-width: 900px) {
@@ -272,6 +333,14 @@ nav a:hover {
 
     .about-text p {
         font-size: 18px;
+    }
+
+    .contact-grid {
+        gap: 50px;
+    }
+
+    .contact h2 {
+        font-size: 46px;
     }
 
 }
@@ -389,6 +458,27 @@ nav a:hover {
 
     .experience-card p {
         font-size: 16px;
+    }
+
+    .contact {
+        padding: 70px 0 60px 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact h2 {
+        font-size: 40px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
+
+    .contact-links a {
+        font-size: 20px;
     }
 
 }
