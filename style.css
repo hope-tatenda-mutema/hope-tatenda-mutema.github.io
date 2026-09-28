@@ -127,3 +127,123 @@ nav a:hover {
     line-height: 1.5;
     margin-bottom: 0;
 }
+
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    body {
+        padding: 30px 24px;
+    }
+
+    nav {
+        padding-bottom: 60px;
+    }
+
+    nav h2 {
+        font-size: 24px;
+    }
+
+    nav div {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+    }
+
+    .projects h2 {
+        font-size: 40px;
+    }
+
+    .project-card {
+        padding: 32px;
+    }
+
+}
+
+
+/* PHONES */
+@media (max-width: 650px) {
+
+    body {
+        padding: 24px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding-bottom: 50px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        gap: 14px 20px;
+    }
+
+    nav h2 {
+        font-size: 23px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 30px 0 80px 0;
+    }
+
+    .hero-label {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+        line-height: 1.08;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .projects {
+        padding: 60px 0 80px 0;
+    }
+
+    .projects h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:nth-child(3) {
+        grid-column: auto;
+    }
+
+    .project-card {
+        min-height: 220px;
+        padding: 28px;
+    }
+
+    .project-card h3 {
+        font-size: 26px;
+    }
+
+    .project-card p {
+        font-size: 17px;
+    }
+
+}
