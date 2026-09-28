@@ -89,6 +89,11 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
 }
 
 .project-type {
@@ -102,6 +107,15 @@ nav a:hover {
     font-size: 30px;
     line-height: 1.15;
     margin: 0 0 18px 0;
+}
+
+.project-card h3 a {
+    color: #222;
+    text-decoration: none;
+}
+
+.project-card h3 a:hover {
+    opacity: 0.6;
 }
 
 .project-card p {
