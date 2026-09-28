@@ -7,6 +7,9 @@ body {
     color: #222;
 }
 
+
+/* NAVIGATION */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -34,6 +37,9 @@ nav a:hover {
     opacity: 0.6;
 }
 
+
+/* HERO */
+
 .hero {
     padding: 40px 0 120px 0;
 }
@@ -59,15 +65,21 @@ nav a:hover {
     margin: 0;
 }
 
-.projects {
-    padding: 80px 0 120px 0;
-}
+
+/* GENERAL SECTION LABEL */
 
 .section-label {
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    padding: 80px 0 120px 0;
 }
 
 .projects h2 {
@@ -86,9 +98,11 @@ nav a:hover {
     padding: 40px;
     min-height: 260px;
     border-radius: 18px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
     transition: transform 0.25s ease;
 }
 
@@ -175,22 +189,38 @@ nav a:hover {
 
 .experience-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding: 28px 0;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+
+    padding: 34px 0;
+
     border-bottom: 1px solid #dcdcdc;
-    align-items: center;
+    align-items: start;
 }
 
 .experience-item h3 {
     font-size: 24px;
+    line-height: 1.25;
     margin: 0;
 }
 
-.experience-item p {
+.experience-org {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 8px 0 0 0;
+    opacity: 0.72;
+}
+
+.experience-right p {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.55;
     margin: 0;
+}
+
+.experience-date {
+    font-size: 16px !important;
+    margin-top: 10px !important;
+    opacity: 0.6;
 }
 
 
@@ -250,6 +280,10 @@ nav a:hover {
         font-size: 40px;
     }
 
+    .experience-item {
+        gap: 35px;
+    }
+
 }
 
 
@@ -260,6 +294,9 @@ nav a:hover {
     body {
         padding: 24px 20px;
     }
+
+
+    /* MOBILE NAVIGATION */
 
     nav {
         flex-direction: column;
@@ -281,6 +318,9 @@ nav a:hover {
         font-size: 16px;
     }
 
+
+    /* MOBILE HERO */
+
     .hero {
         padding: 30px 0 80px 0;
     }
@@ -298,6 +338,9 @@ nav a:hover {
     .hero-description {
         font-size: 18px;
     }
+
+
+    /* MOBILE PROJECTS */
 
     .projects {
         padding: 60px 0 80px 0;
@@ -329,6 +372,9 @@ nav a:hover {
         font-size: 17px;
     }
 
+
+    /* MOBILE ABOUT */
+
     .about {
         padding: 70px 0 80px 0;
     }
@@ -346,6 +392,9 @@ nav a:hover {
         font-size: 18px;
     }
 
+
+    /* MOBILE EXPERIENCE */
+
     .experience {
         padding: 70px 0 80px 0;
     }
@@ -357,16 +406,20 @@ nav a:hover {
 
     .experience-item {
         grid-template-columns: 1fr;
-        gap: 8px;
-        padding: 24px 0;
+        gap: 18px;
+        padding: 28px 0;
     }
 
     .experience-item h3 {
         font-size: 22px;
     }
 
-    .experience-item p {
+    .experience-right p {
         font-size: 17px;
+    }
+
+    .experience-date {
+        font-size: 15px !important;
     }
 
 }
