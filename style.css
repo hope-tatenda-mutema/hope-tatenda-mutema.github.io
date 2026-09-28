@@ -157,6 +157,43 @@ nav a:hover {
 }
 
 
+/* EXPERIENCE */
+
+.experience {
+    padding: 100px 0 120px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.experience h2 {
+    font-size: 46px;
+    margin: 0 0 50px 0;
+}
+
+.experience-list {
+    border-top: 1px solid #dcdcdc;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 28px 0;
+    border-bottom: 1px solid #dcdcdc;
+    align-items: center;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.experience-item p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
 /* TABLETS */
 
 @media (max-width: 900px) {
@@ -207,6 +244,10 @@ nav a:hover {
 
     .about-text p {
         font-size: 18px;
+    }
+
+    .experience h2 {
+        font-size: 40px;
     }
 
 }
@@ -303,6 +344,29 @@ nav a:hover {
 
     .about-text p {
         font-size: 18px;
+    }
+
+    .experience {
+        padding: 70px 0 80px 0;
+    }
+
+    .experience h2 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 24px 0;
+    }
+
+    .experience-item h3 {
+        font-size: 22px;
+    }
+
+    .experience-item p {
+        font-size: 17px;
     }
 
 }
