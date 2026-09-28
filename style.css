@@ -77,7 +77,7 @@ nav a:hover {
 
 .project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
@@ -94,6 +94,10 @@ nav a:hover {
 
 .project-card:hover {
     transform: translateY(-6px);
+}
+
+.project-card:nth-child(3) {
+    grid-column: 1 / -1;
 }
 
 .project-type {
