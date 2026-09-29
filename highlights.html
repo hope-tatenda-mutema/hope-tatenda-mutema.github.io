@@ -1,1 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <title>Highlights & Moments | Hope Tatenda Mutema</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Competitions, presentations, research moments, and professional highlights from Hope Tatenda Mutema."
+    >
+
+    <link
+        rel="icon"
+        type="image/jpeg"
+        href="images/favicon.JPG"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            background: #f7f7f7;
+            color: #222;
+
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 30px 50px;
+        }
+
+
+        /* NAVIGATION */
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 21px 0;
+
+            background: rgba(247, 247, 247, 0.92);
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+        }
+
+
+        .brand {
+            color: #222;
+            text-decoration: none;
+
+            font-size: 23px;
+            font-weight: 750;
+
+            letter-spacing: -0.45px;
+        }
+
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+        }
+
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+
+        /* INTRO */
+
+        .highlights-hero {
+            padding: 90px 0 80px;
+        }
+
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            margin-bottom: 45px;
+
+            color: #555;
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 650;
+        }
+
+
+        .back-link:hover {
+            color: #222;
+        }
+
+
+        .section-label {
+            margin: 0 0 18px;
+
+            font-size: 12px;
+            font-weight: 750;
+
+            letter-spacing: 2.1px;
+        }
+
+
+        .highlights-hero h1 {
+            max-width: 790px;
+
+            margin: 0 0 26px;
+
+            font-size: clamp(52px, 7vw, 82px);
+            line-height: 0.98;
+
+            letter-spacing: -3px;
+        }
+
+
+        .hero-description {
+            max-width: 680px;
+
+            margin: 0;
+
+            font-size: 19px;
+            line-height: 1.6;
+
+            color: #555;
+        }
+
+
+        /* HIGHLIGHTS */
+
+        .highlights-section {
+            padding: 20px 0 100px;
+        }
+
+
+        .highlight-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 26px;
+        }
+
+
+        .highlight-card {
+            overflow: hidden;
+
+            border-radius: 22px;
+
+            background: #fff;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.035);
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 22px 44px rgba(0, 0, 0, 0.075);
+        }
+
+
+        .highlight-visual {
+            min-height: 260px;
+
+            padding: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .competition-one {
+            background:
+                linear-gradient(
+                    135deg,
+                    #dce7f7,
+                    #eae5fa
+                );
+        }
+
+
+        .competition-two {
+            background:
+                linear-gradient(
+                    135deg,
+                    #e2f0ec,
+                    #edf7f4
+                );
+        }
+
+
+        .un-presentation {
+            background:
+                linear-gradient(
+                    135deg,
+                    #e8e0f5,
+                    #f3eef9
+                );
+        }
+
+
+        .moment-icon {
+            width: 110px;
+            height: 110px;
+
+            border-radius: 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                rgba(255, 255, 255, 0.75);
+
+            box-shadow:
+                0 18px 40px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .moment-icon i {
+            font-size: 43px;
+            color: #333;
+        }
+
+
+        .highlight-content {
+            padding: 31px 34px 36px;
+        }
+
+
+        .highlight-type {
+            margin: 0 0 13px;
+
+            font-size: 11px;
+            font-weight: 750;
+
+            letter-spacing: 1.55px;
+
+            color: #666;
+        }
+
+
+        .highlight-content h2 {
+            margin: 0 0 14px;
+
+            font-size: 28px;
+            line-height: 1.15;
+
+            letter-spacing: -0.7px;
+        }
+
+
+        .highlight-content p {
+            margin: 0;
+
+            font-size: 16px;
+            line-height: 1.6;
+
+            color: #505050;
+        }
+
+
+        .highlight-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            margin-top: 22px;
+
+            color: #222;
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 750;
+        }
+
+
+        .highlight-link:hover {
+            opacity: 0.6;
+        }
+
+
+        /* FEATURED WIDE CARD */
+
+        .highlight-card.featured {
+            grid-column: 1 / -1;
+
+            display: grid;
+
+            grid-template-columns:
+                0.9fr 1.1fr;
+        }
+
+
+        .highlight-card.featured .highlight-visual {
+            min-height: 340px;
+        }
+
+
+        .highlight-card.featured .highlight-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 45px;
+        }
+
+
+        .highlight-card.featured h2 {
+            font-size: 35px;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 30px 0 10px;
+
+            border-top: 1px solid #dcdcdc;
+        }
+
+
+        footer p {
+            margin: 0;
+
+            font-size: 13px;
+
+            color: #888;
+        }
+
+
+        footer a {
+            color: #222;
+            text-decoration: none;
+
+            font-size: 13px;
+            font-weight: 650;
+        }
+
+
+        /* TABLET */
+
+        @media (max-width: 850px) {
+
+            .highlight-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .highlight-card.featured {
+                grid-column: auto;
+
+                display: block;
+            }
+
+
+            .highlight-card.featured .highlight-visual {
+                min-height: 260px;
+            }
+
+
+            .highlight-card.featured .highlight-content {
+                padding: 31px 34px 36px;
+            }
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 650px) {
+
+            .page {
+                padding: 0 18px 30px;
+            }
+
+
+            .site-nav {
+                flex-direction: column;
+                align-items: flex-start;
+
+                gap: 12px;
+
+                padding: 16px 0;
+            }
+
+
+            .brand {
+                font-size: 20px;
+            }
+
+
+            .nav-links {
+                flex-wrap: wrap;
+
+                gap: 10px 17px;
+            }
+
+
+            .highlights-hero {
+                padding: 55px 0 60px;
+            }
+
+
+            .back-link {
+                margin-bottom: 35px;
+            }
+
+
+            .highlights-hero h1 {
+                font-size: 48px;
+
+                letter-spacing: -2px;
+            }
+
+
+            .hero-description {
+                font-size: 17px;
+            }
+
+
+            .highlight-visual {
+                min-height: 210px;
+            }
+
+
+            .highlight-content {
+                padding: 27px 25px 30px;
+            }
+
+
+            .highlight-content h2,
+            .highlight-card.featured h2 {
+                font-size: 25px;
+            }
+
+
+            footer {
+                gap: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="site-nav">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+            Hope Tatenda Mutema
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#projects">
+                Projects
+            </a>
+
+            <a href="index.html#experience">
+                Experience
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- INTRO -->
+
+    <header class="highlights-hero">
+
+        <a
+            href="index.html"
+            class="back-link"
+        >
+            ← Back to portfolio
+        </a>
+
+
+        <p class="section-label">
+            HIGHLIGHTS & MOMENTS
+        </p>
+
+
+        <h1>
+            Competitions,
+            presentations,
+            and moments
+            along the way.
+        </h1>
+
+
+        <p class="hero-description">
+            A collection of competitions, presentations, research experiences,
+            and professional moments that have shaped my work across data,
+            analytics, and artificial intelligence.
+        </p>
+
+    </header>
+
+
+
+    <!-- HIGHLIGHTS -->
+
+    <main class="highlights-section">
+
+        <div class="highlight-grid">
+
+
+            <!-- COMPETITION 1 -->
+
+            <article class="highlight-card">
+
+                <div class="highlight-visual competition-one">
+
+                    <div class="moment-icon">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="highlight-content">
+
+                    <p class="highlight-type">
+                        COMPETITION · ARTIFICIAL INTELLIGENCE
+                    </p>
+
+
+                    <h2>
+                        Pathfinder AI Competition
+                    </h2>
+
+
+                    <p>
+                        Developing Pathfinder AI gave me the opportunity to
+                        combine agentic AI, automation, and data-driven
+                        recommendations while competing alongside other
+                        innovative student teams.
+                    </p>
+
+
+                    <a
+                        class="highlight-link"
+                        href="https://www.linkedin.com/in/hope-mutema/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        View LinkedIn post ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- COMPETITION 2 -->
+
+            <article class="highlight-card">
+
+                <div class="highlight-visual competition-two">
+
+                    <div class="moment-icon">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="highlight-content">
+
+                    <p class="highlight-type">
+                        COMPETITION · AI · TECHNOLOGY
+                    </p>
+
+
+                    <h2>
+                        AI Competition Experience
+                    </h2>
+
+
+                    <p>
+                        Working under competition conditions challenged me to
+                        move quickly from an idea to a working technical
+                        solution while collaborating with a team and presenting
+                        the final product.
+                    </p>
+
+
+                    <a
+                        class="highlight-link"
+                        href="https://www.linkedin.com/in/hope-mutema/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        View LinkedIn post ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- UN PRESENTATION -->
+
+            <article class="highlight-card featured">
+
+                <div class="highlight-visual un-presentation">
+
+                    <div class="moment-icon">
+
+                        <i class="fa-solid fa-microphone-lines"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="highlight-content">
+
+                    <p class="highlight-type">
+                        PRESENTATION · UNITED NATIONS · RESEARCH
+                    </p>
+
+
+                    <h2>
+                        United Nations Presentation
+                    </h2>
+
+
+                    <p>
+                        A meaningful opportunity to contribute to the
+                        presentation of research connected to disability
+                        rights, artificial intelligence, and global monitoring
+                        of CRPD implementation. This work reflects my growing
+                        interest in using data and AI for research with
+                        real-world social impact.
+                    </p>
+
+
+                    <a
+                        class="highlight-link"
+                        href="https://www.linkedin.com/in/hope-mutema/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        View LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Hope Tatenda Mutema
+        </p>
+
+
+        <a href="index.html">
+            Back to portfolio →
+        </a>
+
+    </footer>
+
+
+</div>
+
+</body>
+
+</html>
