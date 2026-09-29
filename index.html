@@ -37,6 +37,88 @@
 <body id="top">
 
 
+    <!-- AI WELCOME POPUP -->
+
+    <div
+        id="aiWelcome"
+        class="ai-welcome"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="aiWelcomeTitle"
+    >
+
+        <div class="ai-welcome-backdrop"></div>
+
+
+        <div class="ai-welcome-card">
+
+            <button
+                id="closeAiWelcome"
+                class="ai-welcome-close"
+                type="button"
+                aria-label="Close"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="ai-welcome-icon">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            </div>
+
+
+            <p class="ai-welcome-label">
+                MEET HOPE AI
+            </p>
+
+
+            <h2 id="aiWelcomeTitle">
+                Want to learn about Hope faster?
+            </h2>
+
+
+            <p class="ai-welcome-text">
+                You can explore the portfolio normally, or ask Hope AI
+                about my projects, experience, research, education,
+                technical skills, and professional background.
+            </p>
+
+
+            <div class="ai-welcome-actions">
+
+                <button
+                    id="explorePortfolio"
+                    class="ai-choice ai-choice-secondary"
+                    type="button"
+                >
+                    Explore Portfolio
+                </button>
+
+
+                <a
+                    href="agent.html"
+                    id="openHopeAi"
+                    class="ai-choice ai-choice-primary"
+                >
+                    <i class="fa-solid fa-sparkles"></i>
+                    Ask Hope AI
+                </a>
+
+            </div>
+
+
+            <p class="ai-welcome-note">
+                You can open Hope AI anytime from the button on this page.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
     <!-- NAVIGATION -->
 
     <nav class="site-nav">
@@ -45,14 +127,41 @@
             Hope Tatenda Mutema
         </a>
 
+
         <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="highlights.html">Highlights</a>
-            <a href="#contact">Contact</a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+            <a href="#experience">
+                Experience
+            </a>
+
+            <a href="highlights.html">
+                Highlights
+            </a>
+
+            <a href="agent.html" class="nav-ai-link">
+                Hope AI
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
         </div>
 
     </nav>
@@ -114,6 +223,7 @@
                     >
                         View Projects
                     </a>
+
 
                     <a
                         href="#contact"
@@ -217,8 +327,6 @@
         <div class="project-grid">
 
 
-            <!-- PROJECT 1 -->
-
             <article class="project-card">
 
                 <div class="project-image project-image-one">
@@ -270,8 +378,6 @@
 
 
 
-            <!-- PROJECT 2 -->
-
             <article class="project-card">
 
                 <div class="project-image project-image-two">
@@ -322,8 +428,6 @@
             </article>
 
 
-
-            <!-- PROJECT 3 -->
 
             <article class="project-card">
 
@@ -737,12 +841,19 @@
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+
                     <span class="contact-link-left">
+
                         <i class="fa-brands fa-linkedin-in"></i>
+
                         LinkedIn
+
                     </span>
 
-                    <span class="contact-arrow">↗</span>
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
                 </a>
 
 
@@ -751,12 +862,19 @@
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+
                     <span class="contact-link-left">
+
                         <i class="fa-brands fa-github"></i>
+
                         GitHub
+
                     </span>
 
-                    <span class="contact-arrow">↗</span>
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
                 </a>
 
 
@@ -765,24 +883,36 @@
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+
                     <span class="contact-link-left">
+
                         <i class="fa-solid fa-globe"></i>
+
                         Personal Website
+
                     </span>
 
-                    <span class="contact-arrow">↗</span>
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
                 </a>
 
 
-                <a
-                    href="mailto:contact@hopetatendamutema.com"
-                >
+                <a href="mailto:contact@hopetatendamutema.com">
+
                     <span class="contact-link-left">
+
                         <i class="fa-regular fa-envelope"></i>
+
                         Email
+
                     </span>
 
-                    <span class="contact-arrow">↗</span>
+                    <span class="contact-arrow">
+                        ↗
+                    </span>
+
                 </a>
 
             </div>
@@ -806,6 +936,152 @@
         </a>
 
     </footer>
+
+
+
+    <!-- PERSISTENT HOPE AI BUTTON -->
+
+    <a
+        href="agent.html"
+        class="floating-ai-button"
+        aria-label="Open Hope AI"
+    >
+
+        <span class="floating-ai-icon">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+        </span>
+
+
+        <span class="floating-ai-text">
+
+            <strong>
+                Hope AI
+            </strong>
+
+            <small>
+                Ask about me
+            </small>
+
+        </span>
+
+    </a>
+
+
+
+    <script>
+
+        const aiWelcome =
+            document.getElementById("aiWelcome");
+
+        const explorePortfolio =
+            document.getElementById("explorePortfolio");
+
+        const closeAiWelcome =
+            document.getElementById("closeAiWelcome");
+
+        const openHopeAi =
+            document.getElementById("openHopeAi");
+
+        const aiBackdrop =
+            document.querySelector(".ai-welcome-backdrop");
+
+
+        /*
+            Show the introduction once per browser session.
+        */
+
+        const hasSeenAiWelcome =
+            sessionStorage.getItem(
+                "hope-ai-welcome-seen"
+            );
+
+
+        if (!hasSeenAiWelcome) {
+
+            setTimeout(
+                function() {
+
+                    aiWelcome.classList.add("show");
+
+                    document.body.classList.add(
+                        "modal-open"
+                    );
+
+                },
+                650
+            );
+
+        }
+
+
+
+        function closeWelcome() {
+
+            aiWelcome.classList.remove("show");
+
+            document.body.classList.remove(
+                "modal-open"
+            );
+
+            sessionStorage.setItem(
+                "hope-ai-welcome-seen",
+                "true"
+            );
+
+        }
+
+
+
+        explorePortfolio.addEventListener(
+            "click",
+            closeWelcome
+        );
+
+
+        closeAiWelcome.addEventListener(
+            "click",
+            closeWelcome
+        );
+
+
+        aiBackdrop.addEventListener(
+            "click",
+            closeWelcome
+        );
+
+
+        openHopeAi.addEventListener(
+            "click",
+            function() {
+
+                sessionStorage.setItem(
+                    "hope-ai-welcome-seen",
+                    "true"
+                );
+
+            }
+        );
+
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Escape" &&
+                    aiWelcome.classList.contains("show")
+                ) {
+
+                    closeWelcome();
+
+                }
+
+            }
+        );
+
+    </script>
 
 
 </body>
