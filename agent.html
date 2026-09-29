@@ -10,9 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>
-        TendAI | Hope Tatenda Mutema
-    </title>
+    <title>TendAI | Hope Tatenda Mutema</title>
 
     <meta
         name="description"
@@ -42,7 +40,6 @@
         }
 
         body {
-
             min-height: 100vh;
             margin: 0;
 
@@ -58,14 +55,14 @@
 
             background:
                 radial-gradient(
-                    circle at 10% 10%,
-                    rgba(216, 229, 247, 0.85),
-                    transparent 33%
+                    circle at 8% 12%,
+                    rgba(219, 230, 247, 0.95),
+                    transparent 34%
                 ),
                 radial-gradient(
-                    circle at 92% 85%,
-                    rgba(232, 220, 249, 0.8),
-                    transparent 35%
+                    circle at 92% 84%,
+                    rgba(232, 220, 249, 0.9),
+                    transparent 36%
                 ),
                 #f7f7f7;
 
@@ -78,6 +75,8 @@
             margin: 0 auto;
         }
 
+
+        /* NAVIGATION */
 
         .site-nav {
             min-height: 80px;
@@ -92,7 +91,6 @@
                 1px solid rgba(0, 0, 0, 0.06);
         }
 
-
         .brand {
             color: #222;
             text-decoration: none;
@@ -103,14 +101,12 @@
             letter-spacing: -0.5px;
         }
 
-
         .nav-links {
             display: flex;
             align-items: center;
 
             gap: 22px;
         }
-
 
         .nav-links a {
             color: #333;
@@ -122,16 +118,15 @@
             transition: opacity 0.2s ease;
         }
 
-
         .nav-links a:hover {
             opacity: 0.55;
         }
 
 
-        .agent-layout {
+        /* LAYOUT */
 
-            min-height:
-                calc(100vh - 80px);
+        .agent-layout {
+            min-height: calc(100vh - 80px);
 
             display: grid;
 
@@ -147,21 +142,19 @@
         }
 
 
+        /* LEFT SIDE */
+
         .agent-intro {
-            max-width: 460px;
+            max-width: 470px;
         }
 
-
         .agent-label {
-
             display: inline-flex;
-
             align-items: center;
 
             gap: 9px;
 
-            margin:
-                0 0 24px;
+            margin: 0 0 24px;
 
             padding:
                 9px 14px;
@@ -172,17 +165,15 @@
             border-radius: 999px;
 
             background:
-                rgba(255, 255, 255, 0.7);
+                rgba(255, 255, 255, 0.72);
 
             font-size: 12px;
-            font-weight: 750;
+            font-weight: 800;
 
-            letter-spacing: 1.5px;
+            letter-spacing: 1.4px;
         }
 
-
         .agent-dot {
-
             width: 8px;
             height: 8px;
 
@@ -194,23 +185,19 @@
                 0 0 0 5px rgba(105, 170, 141, 0.12);
         }
 
-
         .agent-intro h1 {
-
             margin:
-                0 0 25px;
+                0 0 24px;
 
             font-size:
-                clamp(50px, 6vw, 72px);
+                clamp(52px, 6vw, 74px);
 
             line-height: 0.98;
 
             letter-spacing: -3px;
         }
 
-
         .agent-description {
-
             margin: 0;
 
             font-size: 18px;
@@ -220,10 +207,10 @@
         }
 
 
+        /* PROFILE */
+
         .profile {
-
             display: flex;
-
             align-items: center;
 
             gap: 12px;
@@ -231,9 +218,7 @@
             margin-top: 30px;
         }
 
-
         .profile img {
-
             width: 52px;
             height: 52px;
 
@@ -241,39 +226,33 @@
 
             border-radius: 50%;
 
-            border:
-                3px solid #fff;
+            border: 3px solid #fff;
 
             box-shadow:
                 0 8px 20px rgba(0, 0, 0, 0.08);
         }
 
-
         .profile p {
             margin: 0;
         }
 
-
         .profile-name {
-
-            margin-bottom:
-                3px !important;
+            margin-bottom: 3px !important;
 
             font-size: 14px;
             font-weight: 750;
         }
 
-
         .profile-role {
-
             font-size: 12px;
 
             color: #777;
         }
 
 
-        .suggestion-label {
+        /* SUGGESTIONS */
 
+        .suggestion-label {
             margin:
                 36px 0 12px;
 
@@ -285,19 +264,14 @@
             color: #777;
         }
 
-
         .suggestions {
-
             display: flex;
-
             flex-wrap: wrap;
 
             gap: 9px;
         }
 
-
         .suggestion {
-
             appearance: none;
 
             border:
@@ -309,7 +283,7 @@
                 10px 14px;
 
             background:
-                rgba(255, 255, 255, 0.73);
+                rgba(255, 255, 255, 0.76);
 
             color: #333;
 
@@ -325,9 +299,7 @@
                 background 0.18s ease;
         }
 
-
         .suggestion:hover {
-
             transform:
                 translateY(-2px);
 
@@ -335,10 +307,10 @@
         }
 
 
+        /* PRIVACY NOTE */
+
         .privacy-note {
-
             display: flex;
-
             align-items: flex-start;
 
             gap: 9px;
@@ -351,21 +323,20 @@
             line-height: 1.55;
         }
 
-
         .privacy-note i {
             margin-top: 2px;
         }
 
 
-        .chat-shell {
+        /* CHAT */
 
+        .chat-shell {
             height:
-                min(690px, calc(100vh - 135px));
+                min(700px, calc(100vh - 130px));
 
             min-height: 570px;
 
             display: flex;
-
             flex-direction: column;
 
             overflow: hidden;
@@ -376,7 +347,7 @@
             border-radius: 28px;
 
             background:
-                rgba(255, 255, 255, 0.84);
+                rgba(255, 255, 255, 0.88);
 
             backdrop-filter: blur(24px);
 
@@ -387,12 +358,11 @@
         }
 
 
+        /* CHAT HEADER */
+
         .chat-header {
-
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
 
             gap: 20px;
@@ -404,26 +374,19 @@
                 1px solid rgba(0, 0, 0, 0.055);
         }
 
-
         .chat-agent {
-
             display: flex;
-
             align-items: center;
 
             gap: 12px;
         }
 
-
         .chat-agent-icon {
-
             width: 43px;
             height: 43px;
 
             display: flex;
-
             align-items: center;
-
             justify-content: center;
 
             border-radius: 14px;
@@ -438,20 +401,15 @@
             color: #333;
         }
 
-
         .chat-agent h2 {
-
             margin:
                 0 0 4px;
 
             font-size: 15px;
         }
 
-
         .status {
-
             display: flex;
-
             align-items: center;
 
             gap: 6px;
@@ -463,9 +421,7 @@
             font-size: 11px;
         }
 
-
         .status-dot {
-
             width: 7px;
             height: 7px;
 
@@ -474,9 +430,7 @@
             background: #67ad8e;
         }
 
-
         .clear-button {
-
             border: 0;
 
             background: transparent;
@@ -491,14 +445,14 @@
             cursor: pointer;
         }
 
-
         .clear-button:hover {
             color: #222;
         }
 
 
-        .messages {
+        /* MESSAGES */
 
+        .messages {
             flex: 1;
 
             overflow-y: auto;
@@ -508,23 +462,18 @@
             scroll-behavior: smooth;
         }
 
-
         .message {
-
             display: flex;
 
             margin-bottom: 18px;
         }
 
-
         .message.user {
             justify-content: flex-end;
         }
 
-
         .bubble {
-
-            max-width: 82%;
+            max-width: 84%;
 
             padding:
                 13px 16px;
@@ -535,13 +484,10 @@
             line-height: 1.6;
 
             white-space: pre-wrap;
-
             word-break: break-word;
         }
 
-
         .message.agent .bubble {
-
             border-top-left-radius: 6px;
 
             background: #f0f1f3;
@@ -549,9 +495,7 @@
             color: #292929;
         }
 
-
         .message.user .bubble {
-
             border-top-right-radius: 6px;
 
             background: #222;
@@ -560,8 +504,9 @@
         }
 
 
-        .typing {
+        /* TYPING */
 
+        .typing {
             display: inline-flex;
 
             gap: 5px;
@@ -570,9 +515,7 @@
                 4px 1px;
         }
 
-
         .typing span {
-
             width: 6px;
             height: 6px;
 
@@ -584,23 +527,19 @@
                 typing 1.1s infinite ease-in-out;
         }
 
-
         .typing span:nth-child(2) {
             animation-delay: 0.15s;
         }
 
-
         .typing span:nth-child(3) {
             animation-delay: 0.3s;
         }
-
 
         @keyframes typing {
 
             0%,
             60%,
             100% {
-
                 transform:
                     translateY(0);
 
@@ -608,7 +547,6 @@
             }
 
             30% {
-
                 transform:
                     translateY(-4px);
 
@@ -618,19 +556,17 @@
         }
 
 
-        .chat-input-area {
+        /* INPUT */
 
+        .chat-input-area {
             padding: 17px;
 
             border-top:
                 1px solid rgba(0, 0, 0, 0.055);
         }
 
-
         .input-container {
-
             display: flex;
-
             align-items: flex-end;
 
             gap: 10px;
@@ -646,9 +582,7 @@
             background: #f4f4f4;
         }
 
-
         #messageInput {
-
             flex: 1;
 
             max-height: 125px;
@@ -659,7 +593,6 @@
             resize: none;
 
             border: 0;
-
             outline: 0;
 
             background: transparent;
@@ -672,23 +605,18 @@
             line-height: 1.45;
         }
 
-
         #messageInput::placeholder {
             color: #999;
         }
 
-
         #sendButton {
-
             width: 41px;
             height: 41px;
 
             flex-shrink: 0;
 
             display: flex;
-
             align-items: center;
-
             justify-content: center;
 
             border: 0;
@@ -706,16 +634,12 @@
                 opacity 0.18s ease;
         }
 
-
         #sendButton:hover {
-
             transform:
                 translateY(-1px);
         }
 
-
         #sendButton:disabled {
-
             opacity: 0.35;
 
             cursor: default;
@@ -723,9 +647,7 @@
             transform: none;
         }
 
-
         .input-note {
-
             margin:
                 9px 4px 0;
 
@@ -737,23 +659,21 @@
         }
 
 
+        /* MOBILE */
+
         @media (max-width: 900px) {
 
             .agent-layout {
-
-                grid-template-columns:
-                    1fr;
+                grid-template-columns: 1fr;
 
                 gap: 38px;
 
                 padding-top: 45px;
             }
 
-
             .agent-intro {
                 max-width: 700px;
             }
-
 
             .chat-shell {
                 height: 650px;
@@ -765,71 +685,60 @@
         @media (max-width: 650px) {
 
             .page {
-                width: calc(100% - 30px);
+                width:
+                    calc(100% - 30px);
             }
 
-
             .site-nav {
-
                 flex-direction: column;
 
                 align-items: flex-start;
+
+                gap: 12px;
 
                 padding:
                     17px 0;
             }
 
-
             .brand {
                 font-size: 20px;
             }
 
-
             .nav-links {
-
                 flex-wrap: wrap;
 
                 gap:
                     10px 16px;
             }
 
-
             .agent-layout {
-
                 min-height: auto;
 
                 padding:
                     40px 0;
             }
 
-
             .agent-intro h1 {
-
                 font-size: 47px;
 
                 letter-spacing: -2px;
             }
 
-
             .agent-description {
                 font-size: 16px;
             }
 
-
             .chat-shell {
-
-                height: 660px;
+                height: 650px;
 
                 min-height: 0;
 
                 border-radius: 22px;
             }
 
-
             .messages {
                 padding: 18px;
             }
-
 
             .bubble {
                 max-width: 90%;
@@ -847,6 +756,8 @@
 
 <div class="page">
 
+
+    <!-- NAVIGATION -->
 
     <nav class="site-nav">
 
@@ -885,6 +796,8 @@
     <main class="agent-layout">
 
 
+        <!-- LEFT -->
+
         <section class="agent-intro">
 
 
@@ -909,10 +822,9 @@
 
                 Ask about my public projects, education,
                 technical skills, professional experience,
-                research, and career interests.
+                research, competitions, and career interests.
 
             </p>
-
 
 
             <div class="profile">
@@ -921,7 +833,6 @@
                     src="images/hope-profile.JPG"
                     alt="Hope Tatenda Mutema"
                 >
-
 
                 <div>
 
@@ -936,7 +847,6 @@
                 </div>
 
             </div>
-
 
 
             <p class="suggestion-label">
@@ -985,15 +895,14 @@
 
                 <button
                     class="suggestion"
-                    data-question="What is Hope studying?"
+                    data-question="What competitions and major presentations has Hope participated in?"
                     type="button"
                 >
-                    Education
+                    Highlights
                 </button>
 
 
             </div>
-
 
 
             <div class="privacy-note">
@@ -1001,9 +910,9 @@
                 <i class="fa-solid fa-shield-halved"></i>
 
                 <span>
-                    This assistant is intended to discuss
-                    public professional information only.
-                    Do not submit sensitive personal information.
+                    TendAI is intended to discuss public professional
+                    information only. Please do not submit sensitive
+                    personal information.
                 </span>
 
             </div>
@@ -1012,6 +921,8 @@
         </section>
 
 
+
+        <!-- CHAT -->
 
         <section class="chat-shell">
 
@@ -1040,7 +951,7 @@
 
                             <span class="status-dot"></span>
 
-                            Profile assistant
+                            AI profile assistant
 
                         </p>
 
@@ -1048,7 +959,6 @@
 
 
                 </div>
-
 
 
                 <button
@@ -1070,17 +980,15 @@
                 aria-live="polite"
             >
 
-
                 <div class="message agent">
 
                     <div class="bubble">Hi! I'm TendAI.
 
-Ask me about Hope's public projects, experience, education, research, technical skills, or professional interests.
+Ask me about Hope's public projects, experience, education, research, technical skills, competitions, or professional interests.
 
 What would you like to know?</div>
 
                 </div>
-
 
             </div>
 
@@ -1142,30 +1050,24 @@ What would you like to know?</div>
     const messages =
         document.getElementById("messages");
 
-
     const messageInput =
         document.getElementById("messageInput");
 
-
     const sendButton =
         document.getElementById("sendButton");
-
 
     const clearChat =
         document.getElementById("clearChat");
 
 
     let sessionId =
-        sessionStorage.getItem(
-            "tendai-session"
-        );
+        sessionStorage.getItem("tendai-session");
 
 
     if (!sessionId) {
 
         sessionId =
             createSessionId();
-
 
         sessionStorage.setItem(
             "tendai-session",
@@ -1197,14 +1099,12 @@ What would you like to know?</div>
         const message =
             document.createElement("div");
 
-
         message.className =
             "message " + sender;
 
 
         const bubble =
             document.createElement("div");
-
 
         bubble.className =
             "bubble";
@@ -1217,7 +1117,6 @@ What would you like to know?</div>
         message.appendChild(
             bubble
         );
-
 
         messages.appendChild(
             message
@@ -1235,52 +1134,26 @@ What would you like to know?</div>
         const wrapper =
             document.createElement("div");
 
-
         wrapper.className =
             "message agent";
-
 
         wrapper.id =
             "typingMessage";
 
 
-        const bubble =
-            document.createElement("div");
+        wrapper.innerHTML = `
 
+            <div class="bubble">
 
-        bubble.className =
-            "bubble";
+                <div class="typing">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
+            </div>
 
-        const typing =
-            document.createElement("div");
-
-
-        typing.className =
-            "typing";
-
-
-        for (
-            let i = 0;
-            i < 3;
-            i++
-        ) {
-
-            typing.appendChild(
-                document.createElement("span")
-            );
-
-        }
-
-
-        bubble.appendChild(
-            typing
-        );
-
-
-        wrapper.appendChild(
-            bubble
-        );
+        `;
 
 
         messages.appendChild(
@@ -1313,19 +1186,35 @@ What would you like to know?</div>
 
     function extractReply(data) {
 
+        /*
+            STRING RESPONSE
+        */
+
         if (
             typeof data === "string"
         ) {
 
-            return data;
+            return data.trim();
 
         }
 
 
+        /*
+            ARRAY RESPONSE
+        */
+
         if (
-            Array.isArray(data) &&
-            data.length > 0
+            Array.isArray(data)
         ) {
+
+            if (
+                data.length === 0
+            ) {
+
+                return null;
+
+            }
+
 
             return extractReply(
                 data[0]
@@ -1334,12 +1223,16 @@ What would you like to know?</div>
         }
 
 
+        /*
+            OBJECT RESPONSE
+        */
+
         if (
             data &&
             typeof data === "object"
         ) {
 
-            const possibleFields = [
+            const fields = [
 
                 "output",
                 "response",
@@ -1354,8 +1247,7 @@ What would you like to know?</div>
 
 
             for (
-                const field
-                of possibleFields
+                const field of fields
             ) {
 
                 if (
@@ -1363,7 +1255,28 @@ What would you like to know?</div>
                     === "string"
                 ) {
 
-                    return data[field];
+                    return data[field].trim();
+
+                }
+
+
+                if (
+                    data[field] &&
+                    typeof data[field]
+                    === "object"
+                ) {
+
+                    const nested =
+                        extractReply(
+                            data[field]
+                        );
+
+
+                    if (nested) {
+
+                        return nested;
+
+                    }
 
                 }
 
@@ -1444,7 +1357,10 @@ What would you like to know?</div>
                         headers: {
 
                             "Content-Type":
-                                "application/json"
+                                "application/json",
+
+                            "Accept":
+                                "application/json, text/plain"
 
                         },
 
@@ -1465,37 +1381,38 @@ What would you like to know?</div>
 
             if (!response.ok) {
 
+                const errorText =
+                    await response.text();
+
+
                 throw new Error(
-                    "Request failed"
+                    "Webhook returned " +
+                    response.status +
+                    ": " +
+                    errorText
                 );
 
             }
 
 
-            const contentType =
-                response.headers.get(
-                    "content-type"
-                ) || "";
+            const rawText =
+                await response.text();
 
 
             let data;
 
 
-            if (
-                contentType.includes(
-                    "application/json"
-                )
-            ) {
+            try {
 
                 data =
-                    await response.json();
+                    JSON.parse(rawText);
 
             }
 
-            else {
+            catch {
 
                 data =
-                    await response.text();
+                    rawText;
 
             }
 
@@ -1511,10 +1428,17 @@ What would you like to know?</div>
 
             if (!reply) {
 
+                console.log(
+                    "Unrecognized TendAI response:",
+                    data
+                );
+
+
                 addMessage(
-                    "TendAI received your question, but the response format needs to be configured.",
+                    "TendAI received your question, but the workflow returned a response format the page does not recognize yet.",
                     "agent"
                 );
+
 
                 return;
 
@@ -1532,17 +1456,33 @@ What would you like to know?</div>
         catch (error) {
 
 
+            hideTyping();
+
+
             console.error(
-                "TendAI request failed:",
+                "TendAI error:",
                 error
             );
 
 
-            hideTyping();
+            let errorMessage =
+                "I couldn't connect to TendAI right now. Please try again.";
+
+
+            if (
+                String(error)
+                    .toLowerCase()
+                    .includes("failed to fetch")
+            ) {
+
+                errorMessage =
+                    "The browser could not reach TendAI. This is usually caused by the webhook being offline or by CORS settings in n8n.";
+
+            }
 
 
             addMessage(
-                "I couldn't connect to TendAI right now. Please try again shortly.",
+                errorMessage,
                 "agent"
             );
 
@@ -1646,7 +1586,7 @@ What would you like to know?</div>
 
 
             addMessage(
-                "Hi! I'm TendAI.\n\nAsk me about Hope's public projects, experience, education, research, technical skills, or professional interests.\n\nWhat would you like to know?",
+                "Hi! I'm TendAI.\n\nAsk me about Hope's public projects, experience, education, research, technical skills, competitions, or professional interests.\n\nWhat would you like to know?",
                 "agent"
             );
 
