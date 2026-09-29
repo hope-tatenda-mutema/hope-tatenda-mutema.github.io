@@ -978,7 +978,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 14px 0;
+    padding: 15px 0;
 
     border-bottom:
         1px solid #dcdcdc;
@@ -990,7 +990,8 @@ body {
     font-weight: 700;
 
     transition:
-        padding-left 0.2s ease;
+        padding-left 0.2s ease,
+        color 0.2s ease;
 }
 
 .contact-links a:first-child {
@@ -1002,7 +1003,25 @@ body {
     padding-left: 7px;
 }
 
-.contact-links span {
+.contact-link-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.contact-link-left i {
+    width: 20px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #555;
+}
+
+.contact-arrow {
+    font-size: 21px;
+    font-weight: 500;
     opacity: 0.48;
 }
 
@@ -1301,6 +1320,14 @@ footer a {
     .contact h2 {
         font-size:
             40px;
+    }
+
+    .contact-links a {
+        font-size: 17px;
+    }
+
+    .contact-link-left i {
+        font-size: 16px;
     }
 
 
